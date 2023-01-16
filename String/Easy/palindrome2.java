@@ -1,3 +1,45 @@
+/*
+
+                                                                Problem Statement
+                                                              ---------------------
+                                                              
+                                                              
+       Problem id   : 680
+       
+       Problem name : Valid Palindrome II
+       
+       Problem Info : Given a string s, return true if the s can be palindrome after deleting at most one character from it.
+       
+                                                            
+                                                            
+                                                                Problem TestCase
+                                                              --------------------
+                                                            
+        
+        Example 1 :
+                
+                Input: s = "aba"
+                Output: true
+                
+        Example 2 :
+        
+                Input: s = "abc"
+                Output: false
+                
+        Example 3 : 
+        
+                Input: s = "abca"
+                Output: true
+                Explanation: You could delete the character 'c'.
+                                                            
+                                                              
+                                                              
+
+*/
+
+
+
+
 class palindrome2{
         public static boolean IsPalindrome(String str, int i,int j){
             while(i<j){
