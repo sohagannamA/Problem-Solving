@@ -1,14 +1,31 @@
-package Easy;
-class palindrome{
-        public static boolean IsPalindrome(String mystring){
-                for(int i=0;i<mystring.length()/2;i++){
-                        if(mystring.charAt(i)!=mystring.charAt(mystring.length()-1-i)){
-                               return false;
-                        }
-                }
-                return true;
+class palindrome2{
+        public static boolean IsPalindrome(String str, int i,int j){
+            while(i<j){
+              if(str.charAt(i)==str.charAt(j)){
+                    i++;
+                    j++;
+              }
+              else{
+                    return false;
+              }
+            }
+            return true;
+        }
+        public static boolean validPalindrome(String s){
+              int i=0;
+              int j=s.length()-1;
+              while(i<j){
+                    if(s.charAt(i)==s.charAt(j)){
+                          i++;
+                          j--;
+                    }
+                    else{
+                          return IsPalindrome(s, i+1, j) || IsPalindrome(s, i, j-1);
+                    }
+              }
+              return true;
         }
         public static void main(String[] args) {
-               System.out.println(IsPalindrome("abba"));
+              System.out.println(validPalindrome("abca"));
         }
-}
+  }
