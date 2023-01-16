@@ -1,5 +1,5 @@
 package Easy;
-class test2{
+class palindrome{
         public static boolean IsPalindrome(String mystring){
                 for(int i=0;i<mystring.length()/2;i++){
                         if(mystring.charAt(i)!=mystring.charAt(mystring.length()-1-i)){
