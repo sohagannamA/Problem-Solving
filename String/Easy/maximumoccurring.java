@@ -1,4 +1,4 @@
-class test2{
+class Maximum_Occurring{
         public static String Helper(String str){
                 int max=0;
                char Myarray[]=str.toCharArray();
